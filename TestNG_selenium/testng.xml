@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="LoginSuite">
+
+    
+    <test name="ValidLogin">
+        <parameter name="username" value="admin"/>
+        <parameter name="password" value="admin123"/>
+        <classes>
+            <class name="TestNG_practice_program_topicwise.LoginTest"/>
+        </classes>
+    </test>
+
+    
+    <test name="InvalidLogin1">
+        <parameter name="username" value="fgkfg"/>
+        <parameter name="password" value="mdbvkhd"/>
+        <classes>
+            <class name="TestNG_practice_program_topicwise.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="InvalidLogin2">
+        <parameter name="username" value="987785"/>
+        <parameter name="password" value="75644"/>
+        <classes>
+            <class name="TestNG_practice_program_topicwise.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
